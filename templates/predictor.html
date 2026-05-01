@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Fire</title>
+</head>
+<body>
+    <footer>
+        <h1>Forest Fire Predictor</h1>
+    </footer>
+    <main>
+        <form action="{{ url_for('predict_datapoint')}}" method="POST">
+            <input type="text" name="Temperature" placeholder="Temperature" required="required">
+            <input type="text" name="RH" placeholder="RH" required="required">
+            <input type="text" name="Ws" placeholder="Ws" required="required">
+            <input type="text" name="Rain" placeholder="Rain" required="required">
+            <input type="text" name="FFMC" placeholder="FFMC" required="required">
+            <input type="text" name="DMC" placeholder="DMC" required="required">
+            <input type="text" name="ISI" placeholder="ISI" required="required">
+            <input type="text" name="Classes" placeholder="Classes" required="required">
+            <input type="text" name="Region" placeholder="Region" required="required">
+            <button type="submit">Predict</button>
+        </form>
+        <br>
+        <br>
+        <h2>The FWI Predcition is {{result}}</h2>
+    </main>
+</body>
+</html>
