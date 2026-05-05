@@ -53,7 +53,7 @@ To run this project locally, you will need Python installed.
     ```bash
     python application.py
     ```
-2.  Open your web browser and navigate to `http://127.0Here is a high-quality README file designed specifically for that GitHub repository, based on the file structure and code contents you provided.
+2.  Open your web browser and navigate to localhost
 
 ***
 
